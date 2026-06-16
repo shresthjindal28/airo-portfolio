@@ -35,13 +35,13 @@ export function FeaturesSection() {
   return (
     <section id="features" className="py-32 bg-zinc-50/30 relative overflow-hidden select-none border-b border-zinc-150/40">
       {/* Subtle background gradients */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-blue-50/20 blur-[130px] pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full bg-indigo-50/20 blur-[130px] pointer-events-none" />
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-[#89D7B7]/10 blur-[130px] pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full bg-[#89D7B7]/10 blur-[130px] pointer-events-none" />
 
       <div className="container px-4 max-w-6xl mx-auto">
         {/* Section Heading */}
         <div className="max-w-3xl mb-20 text-left">
-          <span className="text-xs font-bold uppercase tracking-widest text-blue-600">Features</span>
+          <span className="text-xs font-bold uppercase tracking-widest text-[#428475]">Features</span>
           <h2 className="text-3xl sm:text-5xl font-extrabold text-zinc-900 tracking-tight mt-2 leading-[1.1]">
             Documentation, structured in real-time.
           </h2>
@@ -64,7 +64,7 @@ export function FeaturesSection() {
             className="md:col-span-2 p-8 bento-card flex flex-col justify-between min-h-[380px]"
           >
             <div>
-              <span className="text-[10px] font-bold text-blue-600 uppercase tracking-wider block mb-1">SOAP Generation</span>
+              <span className="text-[10px] font-bold text-[#428475] uppercase tracking-wider block mb-1">SOAP Generation</span>
               <h3 className="text-xl font-bold text-zinc-900 tracking-tight mb-2">Instant SOAP Note Drafting</h3>
               <p className="text-xs text-zinc-500 max-w-lg mb-6 leading-relaxed">
                 Converts verbal visits into perfectly formatted SOAP draft fields in seconds.
@@ -88,11 +88,11 @@ export function FeaturesSection() {
               <div className="flex-1 p-4 flex flex-col justify-between bg-white">
                 <div>
                   <div className="flex items-center gap-1.5 mb-2.5">
-                    <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-                    <span className="text-[9px] font-bold text-emerald-600 uppercase tracking-wider">Structured output</span>
+                    <span className="h-1.5 w-1.5 rounded-full bg-[#89D7B7]" />
+                    <span className="text-[9px] font-bold text-[#89D7B7] uppercase tracking-wider">Structured output</span>
                   </div>
                   <div className="space-y-1.5 text-[9px] text-zinc-700">
-                    <div className="px-1.5 py-1 rounded bg-emerald-50/50 border-l border-emerald-500 font-sans">
+                    <div className="px-1.5 py-1 rounded bg-[#89D7B7]/10 border-l border-[#89D7B7] font-sans">
                       <strong>Subjective:</strong> Morning headaches, admits medication non-compliance.
                     </div>
                     <div className="px-1.5 py-1 rounded bg-zinc-50 font-sans">
@@ -100,7 +100,7 @@ export function FeaturesSection() {
                     </div>
                   </div>
                 </div>
-                <div className="flex items-center justify-between text-[9px] text-emerald-600 font-semibold pt-2 border-t border-zinc-100">
+                <div className="flex items-center justify-between text-[9px] text-[#89D7B7] font-semibold pt-2 border-t border-zinc-100">
                   <span>98.7% Accuracy</span>
                   <span className="flex items-center gap-0.5 text-zinc-400">Review <ChevronRight className="h-3 w-3" /></span>
                 </div>
@@ -114,7 +114,7 @@ export function FeaturesSection() {
             className="p-8 bento-card flex flex-col justify-between min-h-[380px]"
           >
             <div>
-              <span className="text-[10px] font-bold text-indigo-500 uppercase tracking-wider block mb-1">Ambient Capture</span>
+              <span className="text-[10px] font-bold text-[#89D7B7] uppercase tracking-wider block mb-1">Ambient Capture</span>
               <h3 className="text-xl font-bold text-zinc-900 tracking-tight mb-2">Ambient Recording</h3>
               <p className="text-xs text-zinc-500 mb-6 leading-relaxed">
                 Captures patient conversations without manual dictation or keyboard typing.
@@ -166,11 +166,11 @@ export function FeaturesSection() {
                 </div>
               </div>
               
-              <div className="p-2.5 rounded-lg border border-emerald-100 bg-emerald-50/30 flex items-start gap-2.5">
-                <Check className="h-4 w-4 text-emerald-600 shrink-0 mt-0.5" />
+              <div className="p-2.5 rounded-lg border border-[#89D7B7]/20 bg-[#89D7B7]/10 flex items-start gap-2.5">
+                <Check className="h-4 w-4 text-[#89D7B7] shrink-0 mt-0.5" />
                 <div className="text-left">
-                  <div className="text-[10px] font-bold text-emerald-900 uppercase">Compatible</div>
-                  <p className="text-[9px] text-emerald-750 font-medium leading-normal mt-0.5">Lisinopril + Cetirizine: No clinical interaction detected.</p>
+                  <div className="text-[10px] font-bold text-[#89D7B7] uppercase">Compatible</div>
+                  <p className="text-[9px] text-[#89D7B7] font-medium leading-normal mt-0.5">Lisinopril + Cetirizine: No clinical interaction detected.</p>
                 </div>
               </div>
             </div>
@@ -182,7 +182,7 @@ export function FeaturesSection() {
             className="md:col-span-2 p-8 bento-card flex flex-col justify-between min-h-[380px]"
           >
             <div>
-              <span className="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block mb-1">Operations</span>
+              <span className="text-[10px] font-bold text-[#89D7B7] uppercase tracking-wider block mb-1">Operations</span>
               <h3 className="text-xl font-bold text-zinc-900 tracking-tight mb-2">Longitudinal Patient Feed</h3>
               <p className="text-xs text-zinc-500 max-w-lg mb-6 leading-relaxed">
                 Organizes history, visit files, and vital logs into a chronological scrollable timeline.
@@ -194,7 +194,7 @@ export function FeaturesSection() {
               <div className="relative pl-6 space-y-4 border-l border-zinc-100 py-1 text-left">
                 {/* Event 1 */}
                 <div className="relative">
-                  <span className="absolute -left-[30px] top-1 h-2 w-2 rounded-full bg-blue-500 ring-4 ring-white" />
+                  <span className="absolute -left-[30px] top-1 h-2 w-2 rounded-full bg-[#89D7B7] ring-4 ring-white" />
                   <div className="flex items-center justify-between">
                     <span className="text-[9px] font-bold text-zinc-450 uppercase">June 12, 2026</span>
                     <span className="text-[9px] px-2 py-0.5 rounded-full bg-zinc-100 border border-zinc-200 text-zinc-600 font-semibold">Acute Bronchitis</span>
@@ -218,7 +218,7 @@ export function FeaturesSection() {
               </div>
               <div className="flex items-center justify-between pt-2 border-t border-zinc-100 text-[9px] text-zinc-400 font-semibold mt-2">
                 <span>Timeline includes 8 past consultations</span>
-                <span className="flex items-center gap-0.5 text-blue-600 font-bold cursor-pointer">Open File <ArrowUpRight className="h-3 w-3" /></span>
+                <span className="flex items-center gap-0.5 text-[#428475] font-bold cursor-pointer">Open File <ArrowUpRight className="h-3 w-3" /></span>
               </div>
             </div>
           </motion.div>
@@ -229,7 +229,7 @@ export function FeaturesSection() {
             className="p-8 bento-card flex flex-col justify-between min-h-[380px]"
           >
             <div>
-              <span className="text-[10px] font-bold text-teal-600 uppercase tracking-wider block mb-1">Security</span>
+              <span className="text-[10px] font-bold text-[#428475] uppercase tracking-wider block mb-1">Security</span>
               <h3 className="text-xl font-bold text-zinc-900 tracking-tight mb-2">HIPAA Compliance</h3>
               <p className="text-xs text-zinc-500 mb-6 leading-relaxed">
                 Full legal BAA sign-offs, SOC2 Type II controls, and end-to-end data isolation.
@@ -238,12 +238,12 @@ export function FeaturesSection() {
 
             {/* Security badge UI */}
             <div className="border border-zinc-150/80 rounded-xl bg-zinc-50/50 p-6 shadow-sm flex flex-col items-center justify-center text-center space-y-4 flex-grow">
-              <div className="h-12 w-12 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600 shadow-sm">
+              <div className="h-12 w-12 rounded-full bg-[#89D7B7]/10 border border-[#89D7B7]/20 flex items-center justify-center text-[#428475] shadow-sm">
                 <ShieldCheck className="h-6 w-6" />
               </div>
               <div className="space-y-1">
                 <div className="text-xs font-bold text-zinc-800 uppercase tracking-wider">SOC2 Type II</div>
-                <div className="text-[10px] text-emerald-600 font-bold bg-emerald-50 border border-emerald-100 rounded-full px-3 py-0.5">100% Isolated Nodes</div>
+                <div className="text-[10px] text-[#89D7B7] font-bold bg-[#89D7B7]/10 border border-[#89D7B7]/20 rounded-full px-3 py-0.5">100% Isolated Nodes</div>
               </div>
               <p className="text-[9px] text-zinc-450 leading-relaxed font-light">
                 Encrypted at rest with AES-256. Fully auditable access log.
@@ -268,10 +268,10 @@ export function FeaturesSection() {
             <div className="border border-zinc-150/80 rounded-xl bg-white p-4 shadow-sm flex-grow flex flex-col justify-center gap-3 min-h-[180px]">
               <div className="flex items-center justify-between p-3 rounded-lg border border-zinc-100 bg-zinc-55/30 hover:border-zinc-200 transition-colors">
                 <div className="flex items-center gap-3">
-                  <div className="h-8 w-8 rounded bg-blue-50 border border-blue-100 flex items-center justify-center font-bold text-xs text-blue-600 font-mono">Ep</div>
+                  <div className="h-8 w-8 rounded bg-[#89D7B7]/10 border border-[#89D7B7]/30 flex items-center justify-center font-bold text-xs text-[#428475] font-mono">Ep</div>
                   <div className="text-left">
                     <span className="text-xs font-bold text-zinc-800">Epic Systems Integration</span>
-                    <span className="text-[9px] font-mono text-emerald-600 block">Connected & Active</span>
+                    <span className="text-[9px] font-mono text-[#89D7B7] block">Connected & Active</span>
                   </div>
                 </div>
                 <span className="text-[9px] font-mono text-zinc-400">Synced 10s ago</span>
@@ -279,10 +279,10 @@ export function FeaturesSection() {
 
               <div className="flex items-center justify-between p-3 rounded-lg border border-zinc-100 bg-zinc-55/30 hover:border-zinc-200 transition-colors">
                 <div className="flex items-center gap-3">
-                  <div className="h-8 w-8 rounded bg-teal-50 border border-teal-100 flex items-center justify-center font-bold text-xs text-teal-600 font-mono">Ce</div>
+                  <div className="h-8 w-8 rounded bg-[#89D7B7]/10 border border-[#89D7B7]/30 flex items-center justify-center font-bold text-xs text-[#428475] font-mono">Ce</div>
                   <div className="text-left">
                     <span className="text-xs font-bold text-zinc-800">Oracle Cerner EHR</span>
-                    <span className="text-[9px] font-mono text-emerald-600 block">Connected & Active</span>
+                    <span className="text-[9px] font-mono text-[#89D7B7] block">Connected & Active</span>
                   </div>
                 </div>
                 <span className="text-[9px] font-mono text-zinc-400">Synced 2m ago</span>

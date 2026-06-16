@@ -80,7 +80,7 @@ export function CustomCursor() {
       />
       {/* Inner Dot */}
       <motion.div
-        className="pointer-events-none fixed left-0 top-0 z-[9999] h-1.5 w-1.5 rounded-full bg-teal-500 mix-blend-screen"
+        className="pointer-events-none fixed left-0 top-0 z-[9999] h-1.5 w-1.5 rounded-full bg-[#428475] mix-blend-screen"
         style={{
           x: cursorX,
           y: cursorY,

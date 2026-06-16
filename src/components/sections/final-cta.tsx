@@ -49,11 +49,11 @@ export function FinalCTASection() {
         <div className="relative rounded-2xl bg-zinc-950 text-white py-20 px-8 md:px-16 text-center overflow-hidden shadow-2xl border border-zinc-900">
           
           {/* Immersive glow */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-blue-900/10 blur-[130px] pointer-events-none" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-[#428475]/10 blur-[130px] pointer-events-none" />
 
           <div className="relative z-10 max-w-2xl mx-auto space-y-8">
             <div className="space-y-4">
-              <span className="text-xs font-bold uppercase tracking-widest text-blue-400">Get Started</span>
+              <span className="text-xs font-bold uppercase tracking-widest text-[#428475]">Get Started</span>
               <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight leading-[1.1] text-white">
                 Ready to automate?
               </h2>
@@ -72,7 +72,7 @@ export function FinalCTASection() {
                   onChange={(e) => setDemoEmail(e.target.value)}
                   disabled={status === "loading"}
                   placeholder="dr.lin@clinic.com"
-                  className="flex-grow px-4 py-3 rounded-lg text-xs bg-zinc-900 border border-zinc-800 text-white outline-none focus:border-blue-500 transition-colors placeholder-zinc-500"
+                  className="flex-grow px-4 py-3 rounded-lg text-xs bg-zinc-900 border border-zinc-800 text-white outline-none focus:border-[#428475] transition-colors placeholder-zinc-500"
                 />
                 <button
                   type="submit"
@@ -99,7 +99,7 @@ export function FinalCTASection() {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0 }}
-                    className="flex items-center gap-2 text-[11px] text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 p-3 rounded-lg mt-4 text-left justify-center"
+                    className="flex items-center gap-2 text-[11px] text-[#428475] bg-[#89D7B7]/10 border border-[#89D7B7]/30 p-3 rounded-lg mt-4 text-left justify-center"
                   >
                     <CheckCircle2 className="h-4 w-4 shrink-0" />
                     <span>Demo request received. We will email you within 2 hours.</span>

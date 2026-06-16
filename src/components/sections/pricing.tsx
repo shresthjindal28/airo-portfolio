@@ -25,7 +25,7 @@ export function PricingSection() {
         {/* Section Heading */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20">
           <div className="text-left max-w-2xl">
-            <span className="text-xs font-bold uppercase tracking-widest text-blue-600">Pricing</span>
+            <span className="text-xs font-bold uppercase tracking-widest text-[#428475]">Pricing</span>
             <h2 className="text-3xl sm:text-5xl font-extrabold text-zinc-900 tracking-tight mt-2 leading-[1.1]">
               Simple, flat pricing.
             </h2>
@@ -47,11 +47,11 @@ export function PricingSection() {
             <button
               onClick={() => setBillingCycle("annually")}
               className={`px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide transition-all cursor-pointer flex items-center gap-1.5 ${
-                billingCycle === "annually" ? "bg-white text-blue-600 shadow-sm" : "text-zinc-500"
+                billingCycle === "annually" ? "bg-white text-[#428475] shadow-sm" : "text-zinc-500"
               }`}
             >
               <span>Annually</span>
-              <span className="text-[9px] font-bold bg-blue-50 text-blue-600 px-1.5 py-0.5 rounded-md">
+              <span className="text-[9px] font-bold bg-[#89D7B7]/20 text-[#428475] px-1.5 py-0.5 rounded-md">
                 -20%
               </span>
             </button>
@@ -68,12 +68,12 @@ export function PricingSection() {
                 key={plan.name}
                 className={`p-8 rounded-xl border flex flex-col justify-between transition-all duration-300 bg-white relative text-left ${
                   plan.highlighted
-                    ? "border-blue-500 shadow-md ring-1 ring-blue-500/20"
+                    ? "border-[#428475] shadow-md ring-1 ring-[#428475]/20"
                     : "border-zinc-150 hover:border-zinc-200"
                 }`}
               >
                 {plan.highlighted && (
-                  <span className="absolute -top-3 right-6 px-2.5 py-0.5 rounded-full bg-blue-600 text-white text-[9px] font-bold uppercase tracking-widest shadow-sm">
+                  <span className="absolute -top-3 right-6 px-2.5 py-0.5 rounded-full bg-[#428475] text-white text-[9px] font-bold uppercase tracking-widest shadow-sm">
                     Popular
                   </span>
                 )}
@@ -94,7 +94,7 @@ export function PricingSection() {
                   <ul className="space-y-3 mb-8 text-xs font-light border-t border-zinc-100 pt-6">
                     {plan.features.map((feat, fIdx) => (
                       <li key={fIdx} className="flex items-start gap-2.5">
-                        <Check className="h-4.5 w-4.5 text-blue-600 shrink-0 mt-0.5" />
+                        <Check className="h-4.5 w-4.5 text-[#428475] shrink-0 mt-0.5" />
                         <span className="text-zinc-650">{feat}</span>
                       </li>
                     ))}
@@ -104,7 +104,7 @@ export function PricingSection() {
                 <button
                   className={`w-full py-3 rounded-lg text-xs font-bold uppercase tracking-wider transition-all cursor-pointer flex items-center justify-center gap-1.5 active:scale-98 ${
                     plan.highlighted
-                      ? "bg-blue-600 text-white hover:bg-blue-500 shadow-sm"
+                      ? "bg-[#428475] text-white hover:bg-[#1A312C] shadow-sm"
                       : "bg-zinc-900 text-white hover:bg-zinc-800"
                   }`}
                 >
@@ -151,21 +151,21 @@ export function PricingSection() {
                           <td className="p-4 font-semibold text-zinc-800">{item.name}</td>
                           <td className="p-4 text-center">
                             {typeof item.starter === "boolean" ? (
-                              item.starter ? <Check className="h-4 w-4 text-blue-600 mx-auto" /> : <span className="text-zinc-300 font-light">—</span>
+                              item.starter ? <Check className="h-4 w-4 text-[#428475] mx-auto" /> : <span className="text-zinc-300 font-light">—</span>
                             ) : (
                               <span className="text-zinc-650 font-normal">{item.starter}</span>
                             )}
                           </td>
                           <td className="p-4 text-center">
                             {typeof item.professional === "boolean" ? (
-                              item.professional ? <Check className="h-4 w-4 text-blue-600 mx-auto" /> : <span className="text-zinc-300 font-light">—</span>
+                              item.professional ? <Check className="h-4 w-4 text-[#428475] mx-auto" /> : <span className="text-zinc-300 font-light">—</span>
                             ) : (
                               <span className="text-zinc-900 font-bold">{item.professional}</span>
                             )}
                           </td>
                           <td className="p-4 text-center">
                             {typeof item.enterprise === "boolean" ? (
-                              item.enterprise ? <Check className="h-4 w-4 text-blue-600 mx-auto" /> : <span className="text-zinc-300 font-light">—</span>
+                              item.enterprise ? <Check className="h-4 w-4 text-[#428475] mx-auto" /> : <span className="text-zinc-300 font-light">—</span>
                             ) : (
                               <span className="text-zinc-900 font-bold">{item.enterprise}</span>
                             )}

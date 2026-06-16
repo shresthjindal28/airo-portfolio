@@ -217,7 +217,7 @@ export function CommandMenu() {
       {/* Keyboard Trigger Reminder (Sticky corner) */}
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-6 right-6 z-40 flex items-center gap-2 px-3 py-2 rounded-full border border-zinc-800 bg-zinc-950/80 backdrop-blur-md text-xs text-zinc-400 shadow-2xl hover:border-teal-500 hover:text-zinc-100 transition-all cursor-pointer"
+        className="fixed bottom-6 right-6 z-40 flex items-center gap-2 px-3 py-2 rounded-full border border-zinc-800 bg-zinc-950/80 backdrop-blur-md text-xs text-zinc-400 shadow-2xl hover:border-[#428475] hover:text-zinc-100 transition-all cursor-pointer"
         aria-label="Open Command Menu"
       >
         <span>Press</span>
@@ -292,12 +292,12 @@ export function CommandMenu() {
                                   onMouseEnter={() => setSelectedIndex(absoluteIndex)}
                                   className={`w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-left text-sm transition-all cursor-pointer ${
                                     isSelected
-                                      ? "bg-zinc-900 text-teal-400 border border-zinc-800/80 pl-4"
+                                      ? "bg-zinc-900 text-[#428475] border border-zinc-800/80 pl-4"
                                       : "text-zinc-400 hover:bg-zinc-900/40 border border-transparent"
                                   }`}
                                 >
                                   <div className="flex items-center gap-3">
-                                    <span className={`${isSelected ? "text-teal-400" : "text-zinc-500"}`}>
+                                    <span className={`${isSelected ? "text-[#428475]" : "text-zinc-500"}`}>
                                       {cmd.icon}
                                     </span>
                                     <div>

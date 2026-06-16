@@ -81,7 +81,7 @@ export function SiteFooter() {
                 href="https://github.com/shresthjindal"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-blue-500 transition-colors"
+                className="hover:text-[#428475] transition-colors"
                 title="GitHub"
               >
                 <Github size={18} />
@@ -90,12 +90,12 @@ export function SiteFooter() {
                 href="https://linkedin.com/in/shresthjindal"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-blue-500 transition-colors"
+                className="hover:text-[#428475] transition-colors"
                 title="LinkedIn"
               >
                 <Linkedin size={18} />
               </a>
-              <a href="mailto:jindalshresth@gmail.com" className="hover:text-blue-500 transition-colors" title="Email">
+              <a href="mailto:jindalshresth@gmail.com" className="hover:text-[#428475] transition-colors" title="Email">
                 <Mail size={18} />
               </a>
             </div>
@@ -129,9 +129,9 @@ export function SiteFooter() {
           </p>
           <div className="flex items-center gap-5 text-[11px] text-zinc-600">
             <span>HIPAA Compliant</span>
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+            <span className="w-1.5 h-1.5 rounded-full bg-[#89D7B7]" />
             <span>SOC2 Type II</span>
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+            <span className="w-1.5 h-1.5 rounded-full bg-[#89D7B7]" />
             <span>ISO 27001</span>
           </div>
         </div>

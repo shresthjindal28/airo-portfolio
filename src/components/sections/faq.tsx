@@ -18,7 +18,7 @@ export function FAQSection() {
         
         {/* Section Heading */}
         <div className="max-w-3xl mb-20 text-left">
-          <span className="text-xs font-bold uppercase tracking-widest text-blue-600">Support</span>
+          <span className="text-xs font-bold uppercase tracking-widest text-[#428475]">Support</span>
           <h2 className="text-3xl sm:text-5xl font-extrabold text-zinc-900 tracking-tight mt-2 leading-[1.1]">
             Common questions.
           </h2>
@@ -40,11 +40,11 @@ export function FAQSection() {
                 {/* Trigger Button */}
                 <button
                   onClick={() => toggleAccordion(idx)}
-                  className="w-full flex items-center justify-between p-5 text-left text-sm font-bold text-zinc-800 hover:text-blue-600 cursor-pointer select-none"
+                  className="w-full flex items-center justify-between p-5 text-left text-sm font-bold text-zinc-800 hover:text-[#428475] cursor-pointer select-none"
                 >
                   <span className="font-sans tracking-tight">{faq.question}</span>
                   {isOpen ? (
-                    <ChevronUp className="h-4.5 w-4.5 text-blue-600 shrink-0" />
+                    <ChevronUp className="h-4.5 w-4.5 text-[#428475] shrink-0" />
                   ) : (
                     <ChevronDown className="h-4.5 w-4.5 text-zinc-400 shrink-0" />
                   )}

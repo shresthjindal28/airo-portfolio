@@ -99,12 +99,12 @@ export function ShowcaseSection() {
 
   return (
     <section id="showcase" className="py-32 relative overflow-hidden bg-white select-none border-b border-zinc-150/40">
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-blue-50/20 blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-[#89D7B7]/10 blur-[120px] pointer-events-none" />
 
       <div className="container px-4 max-w-6xl mx-auto relative z-10">
         {/* Section Heading */}
         <div className="max-w-3xl mb-20 text-left">
-          <span className="text-xs font-bold uppercase tracking-widest text-blue-600">Product Tour</span>
+          <span className="text-xs font-bold uppercase tracking-widest text-[#428475]">Product Tour</span>
           <h2 className="text-3xl sm:text-5xl font-extrabold text-zinc-900 tracking-tight mt-2 leading-[1.1]">
             Designed for clinical clarity.
           </h2>
@@ -124,7 +124,7 @@ export function ShowcaseSection() {
               <span className="ml-4 text-[10px] text-zinc-400 font-mono">dashboard.aevomed.md/clinician</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="h-2 w-2 rounded-full bg-emerald-500" />
+              <span className="h-2 w-2 rounded-full bg-[#89D7B7]" />
               <span className="text-[10px] text-zinc-400 font-mono font-medium">Syncing with Epic</span>
             </div>
           </div>
@@ -136,7 +136,7 @@ export function ShowcaseSection() {
               <div className="space-y-6">
                 {/* Doctor Bio */}
                 <div className="flex items-center gap-2.5 px-2 pb-4 border-b border-zinc-150/60">
-                  <div className="h-8 w-8 rounded-full bg-blue-50 border border-blue-200 flex items-center justify-center text-blue-600 font-extrabold text-xs">
+                  <div className="h-8 w-8 rounded-full bg-[#89D7B7]/10 border border-[#89D7B7]/30 flex items-center justify-center text-[#428475] font-extrabold text-xs">
                     SL
                   </div>
                   <div>
@@ -150,7 +150,7 @@ export function ShowcaseSection() {
                   <button
                     onClick={() => setActiveTab("patients")}
                     className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-xs font-bold tracking-wide text-left cursor-pointer transition-all ${
-                      activeTab === "patients" ? "bg-blue-50/50 text-blue-600 border-l-2 border-blue-500" : "text-zinc-500 hover:text-zinc-800"
+                      activeTab === "patients" ? "bg-[#89D7B7]/10 text-[#428475] border-l-2 border-[#428475]" : "text-zinc-500 hover:text-zinc-800"
                     }`}
                   >
                     <Users className="h-4 w-4 shrink-0" />
@@ -160,7 +160,7 @@ export function ShowcaseSection() {
                   <button
                     onClick={() => setActiveTab("visits")}
                     className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-xs font-bold tracking-wide text-left cursor-pointer transition-all ${
-                      activeTab === "visits" ? "bg-blue-50/50 text-blue-600 border-l-2 border-blue-500" : "text-zinc-500 hover:text-zinc-800"
+                      activeTab === "visits" ? "bg-[#89D7B7]/10 text-[#428475] border-l-2 border-[#428475]" : "text-zinc-500 hover:text-zinc-800"
                     }`}
                   >
                     <ClipboardList className="h-4 w-4 shrink-0" />
@@ -170,10 +170,10 @@ export function ShowcaseSection() {
                   <button
                     onClick={() => setActiveTab("consultations")}
                     className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-xs font-bold tracking-wide text-left cursor-pointer transition-all ${
-                      activeTab === "consultations" ? "bg-blue-50/50 text-blue-600 border-l-2 border-blue-500" : "text-zinc-500 hover:text-zinc-800"
+                      activeTab === "consultations" ? "bg-[#89D7B7]/10 text-[#428475] border-l-2 border-[#428475]" : "text-zinc-500 hover:text-zinc-800"
                     }`}
                   >
-                    <Activity className="h-4 w-4 shrink-0 text-blue-500" />
+                    <Activity className="h-4 w-4 shrink-0 text-[#428475]" />
                     <span className="flex items-center gap-1.5">
                       Live Visit
                       <span className="h-1.5 w-1.5 rounded-full bg-red-500 animate-ping" />
@@ -183,7 +183,7 @@ export function ShowcaseSection() {
                   <button
                     onClick={() => setActiveTab("settings")}
                     className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-xs font-bold tracking-wide text-left cursor-pointer transition-all ${
-                      activeTab === "settings" ? "bg-blue-50/50 text-blue-600 border-l-2 border-blue-500" : "text-zinc-500 hover:text-zinc-800"
+                      activeTab === "settings" ? "bg-[#89D7B7]/10 text-[#428475] border-l-2 border-[#428475]" : "text-zinc-500 hover:text-zinc-800"
                     }`}
                   >
                     <Settings className="h-4 w-4 shrink-0" />
@@ -195,7 +195,7 @@ export function ShowcaseSection() {
               {/* Sidebar Footer */}
               <div className="pt-4 border-t border-zinc-150/60 flex items-center justify-between text-[10px] text-zinc-400 font-medium">
                 <span className="flex items-center gap-1">
-                  <ShieldCheck className="h-3.5 w-3.5 text-emerald-500" /> HIPAA Compliant
+                  <ShieldCheck className="h-3.5 w-3.5 text-[#89D7B7]" /> HIPAA Compliant
                 </span>
                 <span>v2.1</span>
               </div>
@@ -222,7 +222,7 @@ export function ShowcaseSection() {
                       {patientList.map((p, idx) => (
                         <div key={idx} className="py-3.5 flex justify-between items-center hover:bg-zinc-50/50 px-2 rounded-lg transition-colors cursor-pointer group">
                           <div>
-                            <h4 className="text-xs font-bold text-zinc-800 group-hover:text-blue-600 transition-colors">{p.name}</h4>
+                            <h4 className="text-xs font-bold text-zinc-800 group-hover:text-[#428475] transition-colors">{p.name}</h4>
                             <p className="text-[10px] text-zinc-450 mt-0.5">Age {p.age} • History: {p.history}</p>
                           </div>
                           <div className="flex items-center gap-2">
@@ -297,7 +297,7 @@ export function ShowcaseSection() {
                         {stage === "idle" && (
                           <button
                             onClick={startSimulation}
-                            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-[10px] font-bold uppercase tracking-wider transition-all cursor-pointer shadow-sm shadow-blue-500/10"
+                            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#428475] hover:bg-[#1A312C] text-white text-[10px] font-bold uppercase tracking-wider transition-all cursor-pointer shadow-sm shadow-[#428475]/10"
                           >
                             <Play className="h-3 w-3 fill-white" /> Start Simulation
                           </button>
@@ -319,7 +319,7 @@ export function ShowcaseSection() {
                       <div className="md:col-span-6 border border-zinc-150 rounded-xl bg-zinc-50/20 p-4 flex flex-col justify-between overflow-hidden">
                         <div className="flex items-center justify-between border-b border-zinc-100 pb-2 mb-2 shrink-0">
                           <span className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider flex items-center gap-1.5">
-                            <Activity className="h-3.5 w-3.5 text-blue-500" /> Patient Transcript
+                            <Activity className="h-3.5 w-3.5 text-[#428475]" /> Patient Transcript
                           </span>
                           {stage === "recording" && (
                             <span className="flex items-center gap-1.5 text-[9px] text-red-500 font-bold uppercase tracking-wider">
@@ -342,7 +342,7 @@ export function ShowcaseSection() {
                               animate={{ opacity: 1, y: 0 }}
                               className={`p-2 rounded-lg leading-relaxed ${
                                 line.startsWith("Doctor:") 
-                                  ? "bg-blue-50/50 text-blue-900 border-l border-blue-500" 
+                                  ? "bg-[#89D7B7]/10 text-[#428475] border-l border-[#89D7B7]" 
                                   : "bg-zinc-100 text-zinc-800"
                               }`}
                             >
@@ -363,7 +363,7 @@ export function ShowcaseSection() {
                               exit={{ opacity: 0 }}
                               className="absolute inset-0 bg-white/90 z-20 flex flex-col items-center justify-center p-6 text-center"
                             >
-                              <Sparkles className="h-8 w-8 text-blue-600 animate-spin mb-4" />
+                              <Sparkles className="h-8 w-8 text-[#428475] animate-spin mb-4" />
                               <p className="text-xs font-bold text-zinc-800">Structuring Medical Context...</p>
                               <p className="text-[10px] text-zinc-400 mt-1 font-mono">{progress}%</p>
                             </motion.div>
@@ -372,10 +372,10 @@ export function ShowcaseSection() {
 
                         <div className="flex items-center justify-between border-b border-zinc-100 pb-2 mb-2 shrink-0">
                           <span className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider flex items-center gap-1.5">
-                            <FileText className="h-3.5 w-3.5 text-indigo-500" /> Generated SOAP Record
+                            <FileText className="h-3.5 w-3.5 text-[#428475]" /> Generated SOAP Record
                           </span>
                           {stage === "completed" && (
-                            <span className="text-[9px] text-emerald-600 font-bold bg-emerald-50 border border-emerald-100 rounded-full px-2 py-0.5 flex items-center gap-1">
+                            <span className="text-[9px] text-[#89D7B7] font-bold bg-[#89D7B7]/10 border border-[#89D7B7]/20 rounded-full px-2 py-0.5 flex items-center gap-1">
                               <UserCheck className="h-3 w-3" /> Synced to EHR
                             </span>
                           )}
@@ -394,9 +394,9 @@ export function ShowcaseSection() {
                               animate={{ opacity: 1 }}
                               className="space-y-3 text-[11px]"
                             >
-                              <div className="p-3 rounded-lg border border-indigo-100 bg-white space-y-2 text-left">
+                              <div className="p-3 rounded-lg border border-[#89D7B7]/20 bg-white space-y-2 text-left">
                                 <div className="flex items-center justify-between border-b border-zinc-100 pb-1.5">
-                                  <span className="text-[10px] font-bold text-indigo-600 uppercase tracking-wider">Clinical SOAP Note</span>
+                                  <span className="text-[10px] font-bold text-[#428475] uppercase tracking-wider">Clinical SOAP Note</span>
                                   <span className="text-[9px] font-mono font-bold text-zinc-400">ICD-10: J20.9</span>
                                 </div>
                                 <div className="space-y-1.5 text-zinc-650 leading-relaxed font-normal">
@@ -407,8 +407,8 @@ export function ShowcaseSection() {
                                 </div>
                               </div>
 
-                              <div className="p-3 rounded-lg border border-emerald-100 bg-white text-left space-y-1.5">
-                                <span className="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block border-b border-zinc-100 pb-1">Prescription Orders</span>
+                              <div className="p-3 rounded-lg border border-[#89D7B7]/20 bg-white text-left space-y-1.5">
+                                <span className="text-[10px] font-bold text-[#89D7B7] uppercase tracking-wider block border-b border-zinc-100 pb-1">Prescription Orders</span>
                                 <div className="text-zinc-650 font-normal">
                                   <p className="font-bold text-zinc-800">Cetirizine Hydrochloride 10mg</p>
                                   <p className="text-[10px] text-zinc-450 mt-0.5">Dispense: 5 tablets • Sig: Take 1 tablet PO daily at bedtime as needed for dry cough.</p>

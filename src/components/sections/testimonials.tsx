@@ -27,7 +27,7 @@ export function TestimonialsSection() {
       <div className="container px-4 max-w-6xl mx-auto">
         {/* Section Heading */}
         <div className="max-w-3xl mb-20 text-left">
-          <span className="text-xs font-bold uppercase tracking-widest text-blue-600">Reviews</span>
+          <span className="text-xs font-bold uppercase tracking-widest text-[#428475]">Reviews</span>
           <h2 className="text-3xl sm:text-5xl font-extrabold text-zinc-900 tracking-tight mt-2 leading-[1.1]">
             Loved by practitioners.
           </h2>
@@ -53,10 +53,10 @@ export function TestimonialsSection() {
               <div>
                 {/* Outcomes metadata */}
                 <div className="flex gap-2 mb-6 flex-wrap">
-                  <span className="inline-flex items-center gap-1 text-[10px] font-bold text-blue-600 bg-blue-50/50 px-2 py-0.5 rounded">
+                  <span className="inline-flex items-center gap-1 text-[10px] font-bold text-[#428475] bg-[#89D7B7]/10 px-2 py-0.5 rounded">
                     <Clock className="h-3 w-3" /> {test.timeSaved}
                   </span>
-                  <span className="inline-flex items-center gap-1 text-[10px] font-bold text-emerald-600 bg-emerald-50/50 px-2 py-0.5 rounded">
+                  <span className="inline-flex items-center gap-1 text-[10px] font-bold text-[#89D7B7] bg-[#89D7B7]/10 px-2 py-0.5 rounded">
                     <Check className="h-3 w-3" /> {test.accuracy}
                   </span>
                 </div>

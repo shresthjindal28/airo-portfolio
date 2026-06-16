@@ -5,23 +5,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Pliant:ital,wght@0,100..900;1,100..900&display=swap');
 @layer base {
   :root {
-    --background: #ffffff;
-    --foreground: #111827; /* Gray 900 */
+    --background: #FFF4E1; /* Cream */
+    --foreground: #1A312C; /* Dark Teal */
     --card: #ffffff;
-    --card-foreground: #111827;
+    --card-foreground: #1A312C;
     --popover: #ffffff;
-    --popover-foreground: #111827;
-    --primary: #0f6fff; /* Medical Blue */
-    --primary-foreground: #ffffff;
-    --secondary: #0d1b2a; /* Deep Navy */
-    --secondary-foreground: #ffffff;
-    --muted: #f9fafb; /* Gray 50 */
-    --muted-foreground: #6b7280; /* Gray 500 */
-    --accent: #00d4aa; /* Mint Accent */
-    --accent-foreground: #0d1b2a;
-    --border: rgba(0, 0, 0, 0.06); /* Softer border */
-    --input: rgba(0, 0, 0, 0.06);
-    --ring: #0f6fff;
+    --popover-foreground: #1A312C;
+    --primary: #1A312C; /* Dark Teal */
+    --primary-foreground: #FFF4E1;
+    --secondary: #428475; /* Muted Green */
+    --secondary-foreground: #FFF4E1;
+    --muted: #89D7B7; /* Light Mint */
+    --muted-foreground: #1A312C;
+    --accent: #89D7B7; /* Light Mint */
+    --accent-foreground: #1A312C;
+    --border: rgba(26, 49, 44, 0.12); /* Dark Teal transparent */
+    --input: rgba(26, 49, 44, 0.08);
+    --ring: #428475;
     --radius: 0.75rem;
 
     --font-sans: 'Pliant', system-ui, sans-serif;

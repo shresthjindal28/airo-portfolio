@@ -33,7 +33,7 @@ export function SiteHeader() {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="text-sm font-semibold text-zinc-700 transition-colors hover:text-blue-700"
+                  className="text-sm font-semibold text-zinc-700 transition-colors hover:text-[#428475]"
                 >
                   {link.label}
                 </a>

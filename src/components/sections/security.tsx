@@ -25,22 +25,22 @@ export function SecuritySection() {
   const getSecurityIcon = (title: string) => {
     switch (title) {
       case "End-to-End Encryption":
-        return <Lock className="h-5 w-5 text-blue-400" />;
+        return <Lock className="h-5 w-5 text-[#89D7B7]" />;
       case "Isolated Data Nodes":
-        return <ShieldCheck className="h-5 w-5 text-emerald-400" />;
+        return <ShieldCheck className="h-5 w-5 text-[#89D7B7]" />;
       case "Granular Permissions":
-        return <Eye className="h-5 w-5 text-indigo-400" />;
+        return <Eye className="h-5 w-5 text-[#428475]" />;
       case "Immutable Auditing":
-        return <Activity className="h-5 w-5 text-teal-400" />;
+        return <Activity className="h-5 w-5 text-[#89D7B7]" />;
       default:
-        return <ShieldAlert className="h-5 w-5 text-blue-400" />;
+        return <ShieldAlert className="h-5 w-5 text-[#89D7B7]" />;
     }
   };
 
   return (
     <section id="security" className="py-32 bg-zinc-950 text-zinc-400 relative overflow-hidden select-none border-b border-zinc-900">
       {/* Visual flare */}
-      <div className="absolute top-1/2 left-0 w-[500px] h-[500px] rounded-full bg-blue-900/10 blur-[130px] pointer-events-none" />
+      <div className="absolute top-1/2 left-0 w-[500px] h-[500px] rounded-full bg-[#428475]/10 blur-[130px] pointer-events-none" />
 
       <div className="container px-4 max-w-6xl mx-auto relative z-10">
         <motion.div
@@ -53,7 +53,7 @@ export function SecuritySection() {
           {/* Left Column: Certifications and Trust Text */}
           <div className="lg:col-span-5 space-y-8 text-left">
             <div className="space-y-4">
-              <span className="text-xs font-bold uppercase tracking-widest text-blue-400">Security</span>
+              <span className="text-xs font-bold uppercase tracking-widest text-[#428475]">Security</span>
               <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-[1.1]">
                 Patient data is fully isolated.
               </h2>
@@ -65,15 +65,15 @@ export function SecuritySection() {
             {/* Badges List */}
             <div className="space-y-3 pt-4 border-t border-zinc-900">
               <div className="flex items-center gap-3 text-xs font-bold text-white uppercase tracking-wider">
-                <span className="h-2 w-2 rounded-full bg-emerald-500" />
+                <span className="h-2 w-2 rounded-full bg-[#89D7B7]" />
                 <span>HIPAA Compliant</span>
               </div>
               <div className="flex items-center gap-3 text-xs font-bold text-white uppercase tracking-wider">
-                <span className="h-2 w-2 rounded-full bg-emerald-500" />
+                <span className="h-2 w-2 rounded-full bg-[#89D7B7]" />
                 <span>SOC2 Type II Certified</span>
               </div>
               <div className="flex items-center gap-3 text-xs font-bold text-white uppercase tracking-wider">
-                <span className="h-2 w-2 rounded-full bg-emerald-500" />
+                <span className="h-2 w-2 rounded-full bg-[#89D7B7]" />
                 <span>TLS 1.3 & AES-256 Encryption</span>
               </div>
             </div>

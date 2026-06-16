@@ -41,7 +41,7 @@ export function HeroSection() {
   return (
     <section className="relative pt-36 pb-28 overflow-hidden bg-white select-none border-b border-zinc-150/40">
       {/* Soft background radial flare */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[750px] rounded-full bg-blue-50/40 blur-[130px] pointer-events-none" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[750px] rounded-full bg-[#89D7B7]/20 blur-[130px] pointer-events-none" />
 
       <div className="container relative z-10 px-4 max-w-6xl mx-auto">
         <motion.div
@@ -51,10 +51,10 @@ export function HeroSection() {
           className="text-center max-w-4xl mx-auto space-y-8"
         >
           {/* Eyebrow notification */}
-          <motion.div variants={itemVariants} className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-blue-100/50 bg-blue-50/50 text-blue-600 text-[11px] font-semibold">
+          <motion.div variants={itemVariants} className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-[#428475]/20 bg-[#89D7B7]/10 text-[#428475] text-[11px] font-semibold">
             <span className="relative flex h-1.5 w-1.5 mr-1">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-blue-500"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#89D7B7] opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-[#428475]"></span>
             </span>
             HIPAA-Compliant Dictation Engine
           </motion.div>
@@ -79,7 +79,7 @@ export function HeroSection() {
           <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
             <button
               onClick={() => handleScrollTo("pricing")}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 px-6 py-3.5 rounded-xl bg-blue-600 text-white font-bold text-xs uppercase tracking-wider hover:bg-blue-500 shadow-md shadow-blue-500/10 active:scale-98 transition-all cursor-pointer"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 px-6 py-3.5 rounded-xl bg-[#428475] text-white font-bold text-xs uppercase tracking-wider hover:bg-[#1A312C] shadow-md shadow-[#428475]/10 active:scale-98 transition-all cursor-pointer"
             >
               Start Free Trial
               <ArrowRight className="h-4 w-4" />
@@ -95,13 +95,13 @@ export function HeroSection() {
           {/* Outcomes checklist */}
           <motion.div variants={itemVariants} className="flex items-center justify-center gap-6 text-[11px] text-zinc-400 font-semibold pt-4">
             <span className="flex items-center gap-1.5">
-              <Check className="h-4 w-4 text-emerald-500" /> BAA Agreements Signed
+              <Check className="h-4 w-4 text-[#89D7B7]" /> BAA Agreements Signed
             </span>
             <span className="flex items-center gap-1.5">
-              <Check className="h-4 w-4 text-emerald-500" /> 70% Time Savings
+              <Check className="h-4 w-4 text-[#89D7B7]" /> 70% Time Savings
             </span>
             <span className="flex items-center gap-1.5">
-              <Check className="h-4 w-4 text-emerald-500" /> SOC2 Type II Certified
+              <Check className="h-4 w-4 text-[#89D7B7]" /> SOC2 Type II Certified
             </span>
           </motion.div>
 
@@ -124,7 +124,7 @@ export function HeroSection() {
               <div className="w-full md:w-56 border-r border-zinc-150 p-4 space-y-6 bg-zinc-50/30">
                 <div className="h-4 w-24 rounded bg-zinc-200" />
                 <div className="space-y-2.5">
-                  <div className="h-8 w-full rounded-lg bg-blue-50 text-blue-600 border border-blue-100/50 flex items-center px-3 gap-2.5 text-xs font-bold">
+                  <div className="h-8 w-full rounded-lg bg-[#89D7B7]/10 text-[#428475] border border-[#89D7B7]/30 flex items-center px-3 gap-2.5 text-xs font-bold">
                     <Activity className="h-4 w-4" /> Live Consult
                   </div>
                   <div className="h-8 w-full rounded-lg hover:bg-zinc-100 flex items-center px-3 gap-2.5 text-xs text-zinc-400 font-bold">
@@ -144,13 +144,13 @@ export function HeroSection() {
                     Patient Consultation Feed
                   </span>
                   <div className="space-y-3 flex-grow overflow-y-auto text-xs text-zinc-700 pr-1">
-                    <p className="p-2 rounded-lg bg-blue-50/50 text-blue-900 border-l border-blue-500">
+                    <p className="p-2 rounded-lg bg-[#89D7B7]/10 text-[#428475] border-l border-[#89D7B7]">
                       Doctor: I suspect a mild viral bronchitis. I want you to rest.
                     </p>
                     <p className="p-2 rounded-lg bg-zinc-100 text-zinc-850">
                       Patient: Understood. Cetirizine at bedtime?
                     </p>
-                    <p className="p-2 rounded-lg bg-blue-50/50 text-blue-900 border-l border-blue-500">
+                    <p className="p-2 rounded-lg bg-[#89D7B7]/10 text-[#428475] border-l border-[#89D7B7]">
                       Doctor: Yes, Cetirizine 10mg daily to manage the dry cough.
                     </p>
                   </div>
@@ -177,7 +177,7 @@ export function HeroSection() {
               animate={floatAnimation(0.2)}
               className="absolute -top-10 -left-6 hidden lg:flex items-center gap-3 p-4 rounded-xl border border-zinc-200/60 bg-white shadow-xl w-52"
             >
-              <div className="p-2 rounded-lg bg-blue-50 text-blue-600">
+              <div className="p-2 rounded-lg bg-[#89D7B7]/10 text-[#428475]">
                 <FileText className="h-4 w-4" />
               </div>
               <div className="text-left">
@@ -191,7 +191,7 @@ export function HeroSection() {
               animate={floatAnimation(1.8)}
               className="absolute -bottom-10 -right-6 hidden lg:flex items-center gap-3 p-4 rounded-xl border border-zinc-200/60 bg-white shadow-xl w-52"
             >
-              <div className="p-2 rounded-lg bg-emerald-50 text-emerald-600">
+              <div className="p-2 rounded-lg bg-[#89D7B7]/10 text-[#89D7B7]">
                 <Check className="h-4 w-4" />
               </div>
               <div className="text-left">

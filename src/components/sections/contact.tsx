@@ -56,7 +56,7 @@ export function ContactSection() {
       <div className="container px-4">
         {/* Section Heading */}
         <div className="max-w-2xl mb-16">
-          <span className="text-xs font-bold uppercase tracking-widest text-teal-400">Connection</span>
+          <span className="text-xs font-bold uppercase tracking-widest text-[#428475]">Connection</span>
           <h2 className="text-3xl sm:text-4xl font-bold font-sans mt-2 tracking-tight">
             Let&apos;s Build Something Together
           </h2>
@@ -75,14 +75,14 @@ export function ContactSection() {
 
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-lg bg-teal-500/10 border border-teal-500/20 text-teal-400 mt-0.5">
+                  <div className="p-3 rounded-lg bg-[#428475]/10 border border-[#428475]/20 text-[#428475] mt-0.5">
                     <Mail className="h-5 w-5" />
                   </div>
                   <div>
                     <h4 className="text-xs font-bold text-zinc-500 uppercase tracking-wider">Email Address</h4>
                     <a
                       href={`mailto:${developerInfo.email}`}
-                      className="text-sm font-semibold text-zinc-200 hover:text-teal-400 transition-colors mt-1 block"
+                      className="text-sm font-semibold text-zinc-200 hover:text-[#428475] transition-colors mt-1 block"
                     >
                       {developerInfo.email}
                     </a>
@@ -90,7 +90,7 @@ export function ContactSection() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 mt-0.5">
+                  <div className="p-3 rounded-lg bg-[#428475]/10 border border-[#428475]/20 text-[#428475] mt-0.5">>
                     <MapPin className="h-5 w-5" />
                   </div>
                   <div>
@@ -117,7 +117,7 @@ export function ContactSection() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="name" className="block text-xs font-semibold text-zinc-400 mb-2">
-                      Your Name <span className="text-teal-500">*</span>
+                      Your Name <span className="text-[#89D7B7]">*</span>
                     </label>
                     <input
                       type="text"
@@ -134,7 +134,7 @@ export function ContactSection() {
 
                   <div>
                     <label htmlFor="email" className="block text-xs font-semibold text-zinc-400 mb-2">
-                      Email Address <span className="text-teal-500">*</span>
+                      Email Address <span className="text-[#89D7B7]">*</span>
                     </label>
                     <input
                       type="email"
@@ -168,7 +168,7 @@ export function ContactSection() {
 
                 <div>
                   <label htmlFor="message" className="block text-xs font-semibold text-zinc-400 mb-2">
-                    Your Message <span className="text-teal-500">*</span>
+                    Your Message <span className="text-[#89D7B7]">*</span>
                   </label>
                   <textarea
                     id="message"
@@ -185,7 +185,7 @@ export function ContactSection() {
 
                 {/* Feedback banners */}
                 {status === "success" && (
-                  <div className="flex items-center gap-2.5 p-4 rounded-lg bg-teal-500/10 border border-teal-500/20 text-teal-400 text-sm animate-fadeIn">
+                  <div className="flex items-center gap-2.5 p-4 rounded-lg bg-[#428475]/10 border border-[#428475]/20 text-[#428475] text-sm animate-fadeIn">
                     <CheckCircle2 className="h-5 w-5 shrink-0" />
                     <span>Thank you! Your message has been sent successfully.</span>
                   </div>
@@ -201,7 +201,7 @@ export function ContactSection() {
                 <button
                   type="submit"
                   disabled={status === "loading"}
-                  className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-teal-600 hover:bg-teal-500 text-white font-semibold transition-all duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed active:scale-98 shadow-[0_4px_15px_rgba(13,148,136,0.2)]"
+                  className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-[#428475] hover:bg-[#1A312C] text-white font-semibold transition-all duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed active:scale-98 shadow-[0_4px_15px_rgba(66,132,117,0.2)]"
                 >
                   {status === "loading" ? (
                     <>

@@ -33,7 +33,7 @@ export function ProblemSection() {
         >
           {/* Left Split: Bold Direct Copy */}
           <div className="lg:col-span-5 space-y-6 text-left">
-            <span className="text-xs font-bold uppercase tracking-widest text-blue-600">The Problem</span>
+            <span className="text-xs font-bold uppercase tracking-widest text-[#428475]">The Problem</span>
             <h2 className="text-3xl sm:text-5xl font-extrabold text-zinc-900 tracking-tight leading-[1.1]">
               Paperwork causes physician burnout.
             </h2>
@@ -79,7 +79,7 @@ export function ProblemSection() {
               className="p-6 bento-card"
             >
               <span className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider block mb-2">SOAP Generation</span>
-              <div className="text-3xl font-extrabold text-blue-600 font-sans tracking-tight">2 Minutes</div>
+              <div className="text-3xl font-extrabold text-[#428475] font-sans tracking-tight">2 Minutes</div>
               <p className="text-[11px] text-zinc-500 mt-2 font-light">
                 Drafts are complete and ready for EMR export in under two minutes.
               </p>
@@ -91,7 +91,7 @@ export function ProblemSection() {
               className="p-6 bento-card"
             >
               <span className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider block mb-2">Manual Typing</span>
-              <div className="text-3xl font-extrabold text-emerald-600 font-sans tracking-tight">95% Cut</div>
+              <div className="text-3xl font-extrabold text-[#89D7B7] font-sans tracking-tight">95% Cut</div>
               <p className="text-[11px] text-zinc-500 mt-2 font-light">
                 Ambient recording eliminates almost all typing and copy-pasting during patient consultations.
               </p>

@@ -57,7 +57,7 @@ export function LoadingScreen({ onComplete }: { onComplete: () => void }) {
         <div className="bg-black/40 border border-t-0 border-zinc-800 p-6 rounded-b-md">
           <div className="h-16 flex flex-col justify-end text-sm mb-4">
             <span className="text-zinc-500">$ {loadingTexts[textIndex]}</span>
-            <span className="text-teal-400 font-semibold mt-1">
+            <span className="text-[#428475] font-semibold mt-1">
               {progress === 100 ? "✓ Ready" : `➜ ${progress}%`}
             </span>
           </div>
@@ -65,7 +65,7 @@ export function LoadingScreen({ onComplete }: { onComplete: () => void }) {
           {/* Progress Bar Container */}
           <div className="h-1.5 w-full bg-zinc-900 rounded-full overflow-hidden">
             <motion.div
-              className="h-full bg-gradient-to-r from-teal-500 to-indigo-500"
+              className="h-full bg-gradient-to-r from-[#428475] to-[#89D7B7]"
               initial={{ width: "0%" }}
               animate={{ width: `${progress}%` }}
               transition={{ ease: "easeOut", duration: 0.1 }}
