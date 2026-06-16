@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Pliant:ital,wght@0,100..900;1,100..900&display=swap');
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #111827; /* Gray 900 */
+    --card: #ffffff;
+    --card-foreground: #111827;
+    --popover: #ffffff;
+    --popover-foreground: #111827;
+    --primary: #0f6fff; /* Medical Blue */
+    --primary-foreground: #ffffff;
+    --secondary: #0d1b2a; /* Deep Navy */
+    --secondary-foreground: #ffffff;
+    --muted: #f9fafb; /* Gray 50 */
+    --muted-foreground: #6b7280; /* Gray 500 */
+    --accent: #00d4aa; /* Mint Accent */
+    --accent-foreground: #0d1b2a;
+    --border: rgba(0, 0, 0, 0.06); /* Softer border */
+    --input: rgba(0, 0, 0, 0.06);
+    --ring: #0f6fff;
+    --radius: 0.75rem;
+
+    --font-sans: 'Pliant', system-ui, sans-serif;
+    --font-display: 'Bitcount Grid Double', Georgia, serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+    @apply antialiased;
+  }
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Grids & Backgrounds */
+.medical-grid {
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, rgba(15, 111, 255, 0.015) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(15, 111, 255, 0.015) 1px, transparent 1px);
+}
+
+.medical-dots {
+  background-image: radial-gradient(rgba(15, 111, 255, 0.03) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Premium Card (Linear/Stripe style) */
+.bento-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 1.25rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.005), 0 8px 24px -16px rgba(0, 0, 0, 0.04);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bento-card:hover {
+  border-color: rgba(15, 111, 255, 0.12);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.005), 0 20px 35px -15px rgba(15, 111, 255, 0.05);
+  transform: translateY(-2px);
+}
+
+.bento-card-dark {
+  background: rgba(13, 27, 42, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 1.25rem;
+  box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.3);
+}
+
+/* Glassmorphism Styles */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px) saturate(140%);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.glass-nav {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+/* Subtle glow */
+.glow-subtle {
+  background: radial-gradient(circle 400px at center, rgba(15, 111, 255, 0.025), transparent 80%);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e5e7eb;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #cbd5e1;
+}
+
+/* Pulse dot animation */
+@keyframes pulseDot {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.25);
+    opacity: 0.5;
+  }
+}
+
+.pulse-dot {
+  animation: pulseDot 2.5s infinite ease-in-out;
+}
+
+/* Bitcount Grid Double — variable font presets */
+.bitcount-grid-double {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0, "CRSV" 0.5, "ELSH" 0, "ELXP" 0, "wght" 400;
+}
+
+/* presets — adjust `wght` to change dot density */
+.bitcount-grid-double-120 { font-variation-settings: "slnt" 0, "CRSV" 0.5, "ELSH" 0, "ELXP" 0, "wght" 120; }
+.bitcount-grid-double-400 { font-variation-settings: "slnt" 0, "CRSV" 0.5, "ELSH" 0, "ELXP" 0, "wght" 400; }
+.bitcount-grid-double-700 { font-variation-settings: "slnt" 0, "CRSV" 0.5, "ELSH" 0, "ELXP" 0, "wght" 700; }
+.bitcount-grid-double-900 { font-variation-settings: "slnt" 0, "CRSV" 0.5, "ELSH" 0, "ELXP" 0, "wght" 900; }
+
