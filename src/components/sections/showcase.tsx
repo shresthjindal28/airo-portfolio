@@ -121,7 +121,7 @@ export function ShowcaseSection() {
               <div className="h-2.5 w-2.5 rounded-full bg-zinc-200" />
               <div className="h-2.5 w-2.5 rounded-full bg-zinc-200" />
               <div className="h-2.5 w-2.5 rounded-full bg-zinc-200" />
-              <span className="ml-4 text-[10px] text-zinc-400 font-mono">dashboard.airo.md/clinician</span>
+              <span className="ml-4 text-[10px] text-zinc-400 font-mono">dashboard.aevomed.md/clinician</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="h-2 w-2 rounded-full bg-emerald-500" />
@@ -439,13 +439,13 @@ export function ShowcaseSection() {
                       <div>
                         <label className="block text-[10px] font-bold text-zinc-400 uppercase tracking-wider mb-2">AI Model Engine</label>
                         <select className="w-full px-3 py-2 border border-zinc-200 rounded-lg text-xs bg-white outline-none text-zinc-700 cursor-pointer">
-                          <option>Airo-Clinical-Core-Llama (1.2s latency, Default)</option>
-                          <option>Airo-MedGPT-4o (3.5s latency, Complex Cases)</option>
+                          <option>Aevomed-Clinical-Core-Llama (1.2s latency, Default)</option>
+                          <option>Aevomed-MedGPT-4o (3.5s latency, Complex Cases)</option>
                         </select>
                       </div>
                       <div>
                         <label className="block text-[10px] font-bold text-zinc-400 uppercase tracking-wider mb-2">EHR Integration Node</label>
-                        <input type="text" readOnly value="HL7-node-apex-hospital.airo.net" className="w-full px-3 py-2 border border-zinc-150 rounded-lg text-xs bg-zinc-50 outline-none text-zinc-500 font-mono" />
+                        <input type="text" readOnly value="HL7-node-apex-hospital.aevomed.net" className="w-full px-3 py-2 border border-zinc-150 rounded-lg text-xs bg-zinc-50 outline-none text-zinc-500 font-mono" />
                       </div>
                     </div>
                   </motion.div>

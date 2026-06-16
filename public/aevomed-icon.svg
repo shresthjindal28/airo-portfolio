@@ -1,0 +1,11 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs><style>@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&amp;display=swap');</style><linearGradient id="g" x1="0" y1="0" x2="400" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0D1B2A"/>
+      <stop offset="100%" stop-color="#0F6FFF"/>
+    </linearGradient></defs>
+  <rect width="400" height="400" fill="#FFFFFF"/>
+  <g transform="translate(50,50)">
+    <path d="M150,24 L276,150 L150,276 L24,150 Z" stroke="url(#g)" stroke-width="28.5" stroke-linejoin="miter" stroke-miterlimit="12" fill="none"/>
+    <line x1="93.255" y1="102.12" x2="206.745" y2="102.12" stroke="#00D4AA" stroke-width="11.97" stroke-linecap="butt"/>
+  </g>
+</svg>

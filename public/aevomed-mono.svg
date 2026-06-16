@@ -1,0 +1,9 @@
+<svg width="540" height="110" viewBox="0 0 540 110" xmlns="http://www.w3.org/2000/svg">
+  <defs><style>@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&amp;display=swap');</style></defs>
+  <rect width="540" height="110" fill="#FFFFFF"/>
+  <g transform="translate(12,11)">
+    <path d="M44,7.04 L80.96,44 L44,80.96 L7.04,44 Z" stroke="#0F0F0F" stroke-width="8.36" stroke-linejoin="miter" stroke-miterlimit="12" fill="none"/>
+    <line x1="27.355" y1="29.955" x2="60.645" y2="29.955" stroke="#0F0F0F" stroke-width="3.511" stroke-linecap="butt"/>
+  </g>
+  <text x="118" y="55" font-family="'Space Grotesk', system-ui, sans-serif" font-size="34" font-weight="600" letter-spacing="5.95" fill="#0F0F0F" dominant-baseline="middle" text-anchor="start">AEVOMED</text>
+</svg>

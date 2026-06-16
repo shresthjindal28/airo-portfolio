@@ -3,14 +3,19 @@ import { LayoutWrapper } from "@/components/layout-wrapper";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "AIRO — AI-Assisted Clinical Operating System",
+  title: "Aevomed — AI-Assisted Clinical Operating System",
   description:
     "Automate clinical documentation, SOAP note drafting, and patient visit scheduling in real time. HIPAA-compliant platform for clinics and hospitals.",
+  icons: {
+    icon: "/aevomed-icon.svg",
+    shortcut: "/aevomed-icon.svg",
+    apple: "/aevomed-app-icon.svg",
+  },
   openGraph: {
-    title: "AIRO — AI-Assisted Clinical Operating System",
+    title: "Aevomed — AI-Assisted Clinical Operating System",
     description:
       "Automate clinical documentation, SOAP note drafting, and patient visit scheduling in real time. HIPAA-compliant platform for clinics and hospitals.",
-    siteName: "AIRO OS",
+    siteName: "Aevomed OS",
     type: "website",
   },
 };

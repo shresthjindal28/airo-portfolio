@@ -46,7 +46,7 @@ export function FeaturesSection() {
             Documentation, structured in real-time.
           </h2>
           <p className="text-zinc-500 mt-4 font-normal text-sm sm:text-base leading-relaxed max-w-2xl">
-            AIRO automatically captures, structures, and synchronizes clinical notes directly into your existing EMR system.
+            Aevomed automatically captures, structures, and synchronizes clinical notes directly into your existing EMR system.
           </p>
         </div>
 

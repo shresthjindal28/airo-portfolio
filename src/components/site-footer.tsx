@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { Mail } from "lucide-react";
 import { Github, Linkedin } from "@/components/icons";
+import { BrandLogo } from "@/components/brand-logo";
 
 export function SiteFooter() {
   const currentYear = new Date().getFullYear();
@@ -32,7 +33,7 @@ export function SiteFooter() {
     {
       title: "Company",
       links: [
-        { label: "About AIRO", href: "#" },
+        { label: "About Aevomed", href: "#" },
         { label: "Careers", href: "#" },
         { label: "Press Kit", href: "#" },
         { label: "Contact Us", href: "#pricing" },
@@ -65,14 +66,15 @@ export function SiteFooter() {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
           {/* Logo & Info column */}
           <div className="col-span-2 space-y-4">
-            <Link href="/" className="flex items-center gap-2 font-bold tracking-tight text-xl text-white">
-              <div className="h-7 w-7 rounded-lg bg-blue-600 flex items-center justify-center text-white font-extrabold text-sm shadow-[0_2px_8px_rgba(15,111,255,0.3)]">
-                A
-              </div>
-              <span className="font-sans font-bold tracking-wider">AIRO</span>
-            </Link>
+            <BrandLogo
+              href="/"
+              variant="horizontal-dark"
+              className="inline-flex"
+              imageClassName="h-auto w-[150px]"
+              priority
+            />
             <p className="text-xs text-zinc-500 leading-relaxed max-w-sm font-light">
-              AIRO is a world-class, HIPAA-compliant clinical intelligence platform automating documentation and patient workflows for clinics, independent practitioners, and enterprise hospitals.
+              Aevomed is a world-class, HIPAA-compliant clinical intelligence platform automating documentation and patient workflows for clinics, independent practitioners, and enterprise hospitals.
             </p>
             <div className="flex items-center gap-4 text-zinc-500 pt-2">
               <a
@@ -123,7 +125,7 @@ export function SiteFooter() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-zinc-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
           <p className="text-xs text-zinc-600 font-light">
-            © {currentYear} AIRO. All rights reserved. Clinical intelligence platform.
+            © {currentYear} Aevomed. All rights reserved. Clinical intelligence platform.
           </p>
           <div className="flex items-center gap-5 text-[11px] text-zinc-600">
             <span>HIPAA Compliant</span>

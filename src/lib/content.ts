@@ -78,7 +78,7 @@ export const workflowSteps: WorkflowStep[] = [
   {
     step: "02",
     title: "AI Analysis",
-    description: "AIRO structures terminology, dosages, and complaints in real-time.",
+    description: "Aevomed structures terminology, dosages, and complaints in real-time.",
   },
   {
     step: "03",
@@ -135,7 +135,7 @@ export const testimonials: TestimonialItem[] = [
     accuracy: "98% note accuracy",
   },
   {
-    quote: "My patients get my full attention now. I don't touch the keyboard once during a consultation. AIRO handles it.",
+    quote: "My patients get my full attention now. I don't touch the keyboard once during a consultation. Aevomed handles it.",
     author: "Dr. Marcus Vance",
     role: "Cardiologist",
     facility: "Heart & Vascular Center",
@@ -220,7 +220,7 @@ export interface FAQItem {
 export const faqs: FAQItem[] = [
   {
     question: "How accurate is the transcription?",
-    answer: "AIRO achieves a 98.7% accuracy rate. It is trained on clinical vocabularies, complex drug names, and diagnostic terms.",
+    answer: "Aevomed achieves a 98.7% accuracy rate. It is trained on clinical vocabularies, complex drug names, and diagnostic terms.",
   },
   {
     question: "Is patient data secure?",

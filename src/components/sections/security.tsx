@@ -58,7 +58,7 @@ export function SecuritySection() {
                 Patient data is fully isolated.
               </h2>
               <p className="text-sm text-zinc-450 leading-relaxed font-light">
-                We sign Business Associate Agreements (BAAs) with every practice. AIRO meets or exceeds HIPAA regulations to guarantee strict clinical privacy.
+                We sign Business Associate Agreements (BAAs) with every practice. Aevomed meets or exceeds HIPAA regulations to guarantee strict clinical privacy.
               </p>
             </div>
 

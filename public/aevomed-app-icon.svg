@@ -1,0 +1,12 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="tile"><rect width="512" height="512" rx="114"/></clipPath>
+  </defs>
+  <g clip-path="url(#tile)">
+    <rect width="512" height="512" fill="#0D1B2A"/>
+    <g transform="translate(96,96)">
+    <path d="M160,25.6 L294.4,160 L160,294.4 L25.6,160 Z" stroke="#FFFFFF" stroke-width="30.4" stroke-linejoin="miter" stroke-miterlimit="12" fill="none"/>
+    <line x1="99.472" y1="108.928" x2="220.528" y2="108.928" stroke="#00D4AA" stroke-width="12.768" stroke-linecap="butt"/>
+  </g>
+  </g>
+</svg>

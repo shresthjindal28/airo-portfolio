@@ -72,7 +72,7 @@ export function HeroSection() {
             variants={itemVariants}
             className="text-base sm:text-lg text-zinc-500 max-w-2xl mx-auto leading-relaxed font-normal"
           >
-            AIRO captures patient consultations, drafts detailed SOAP notes, and updates EMR logs in real-time. No typing required.
+            Aevomed captures patient consultations, drafts detailed SOAP notes, and updates EMR logs in real-time. No typing required.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -115,7 +115,7 @@ export function HeroSection() {
               <div className="h-2.5 w-2.5 rounded-full bg-zinc-200" />
               <div className="h-2.5 w-2.5 rounded-full bg-zinc-200" />
               <div className="h-2.5 w-2.5 rounded-full bg-zinc-200" />
-              <span className="ml-4 text-[10px] text-zinc-400 font-mono">app.airo.md/clinician-dashboard</span>
+              <span className="ml-4 text-[10px] text-zinc-400 font-mono">app.aevomed.md/clinician-dashboard</span>
             </div>
 
             {/* Dashboard Mock Content Layout */}
